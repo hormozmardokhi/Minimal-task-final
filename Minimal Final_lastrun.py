@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.3),
-    on November 01, 2024, at 18:40
+    on November 01, 2024, at 19:37
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -807,7 +807,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "mask" ---
     mask.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 1.0:
+    while continueRoutine and routineTimer.getTime() < 0.5:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -818,7 +818,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # *image* updates
         
         # if image is starting this frame...
-        if image.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        if image.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
             image.frameNStart = frameN  # exact frame index
             image.tStart = t  # local t and not account for scr refresh
@@ -894,7 +894,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     elif mask.forceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-1.000000)
+        routineTimer.addTime(-0.500000)
     thisExp.nextEntry()
     
     # --- Prepare to start Routine "Color" ---
